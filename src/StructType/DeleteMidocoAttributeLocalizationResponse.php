@@ -1,0 +1,52 @@
+<?php
+
+declare(strict_types=1);
+
+namespace Pggns\MidocoApi\WorkflowSD\StructType;
+
+use InvalidArgumentException;
+use WsdlToPhp\PackageBase\AbstractStructBase;
+
+/**
+ * This class stands for DeleteMidocoAttributeLocalizationResponse StructType
+ * @subpackage Structs
+ */
+class DeleteMidocoAttributeLocalizationResponse extends AbstractStructBase
+{
+    /**
+     * The MidocoSystemAttributeLocalization
+     * Meta information extracted from the WSDL
+     * - ref: MidocoSystemAttributeLocalization
+     * @var \Pggns\MidocoApi\WorkflowSD\StructType\AttributeDefinitionLocalDTO|null
+     */
+    protected ?\Pggns\MidocoApi\WorkflowSD\StructType\AttributeDefinitionLocalDTO $MidocoSystemAttributeLocalization = null;
+    /**
+     * Constructor method for DeleteMidocoAttributeLocalizationResponse
+     * @uses DeleteMidocoAttributeLocalizationResponse::setMidocoSystemAttributeLocalization()
+     * @param \Pggns\MidocoApi\WorkflowSD\StructType\AttributeDefinitionLocalDTO $midocoSystemAttributeLocalization
+     */
+    public function __construct(?\Pggns\MidocoApi\WorkflowSD\StructType\AttributeDefinitionLocalDTO $midocoSystemAttributeLocalization = null)
+    {
+        $this
+            ->setMidocoSystemAttributeLocalization($midocoSystemAttributeLocalization);
+    }
+    /**
+     * Get MidocoSystemAttributeLocalization value
+     * @return \Pggns\MidocoApi\WorkflowSD\StructType\AttributeDefinitionLocalDTO|null
+     */
+    public function getMidocoSystemAttributeLocalization(): ?\Pggns\MidocoApi\WorkflowSD\StructType\AttributeDefinitionLocalDTO
+    {
+        return $this->MidocoSystemAttributeLocalization;
+    }
+    /**
+     * Set MidocoSystemAttributeLocalization value
+     * @param \Pggns\MidocoApi\WorkflowSD\StructType\AttributeDefinitionLocalDTO $midocoSystemAttributeLocalization
+     * @return \Pggns\MidocoApi\WorkflowSD\StructType\DeleteMidocoAttributeLocalizationResponse
+     */
+    public function setMidocoSystemAttributeLocalization(?\Pggns\MidocoApi\WorkflowSD\StructType\AttributeDefinitionLocalDTO $midocoSystemAttributeLocalization = null): self
+    {
+        $this->MidocoSystemAttributeLocalization = $midocoSystemAttributeLocalization;
+        
+        return $this;
+    }
+}
