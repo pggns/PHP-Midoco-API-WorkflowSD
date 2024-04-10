@@ -10,7 +10,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Pggns\\MidocoApi\\WorkflowSD\\": "src"
+            "Pggns\\MidocoApi\\WorkflowSD\\": "./src/"
         }
     },
     "type": "library",
